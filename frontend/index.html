@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>hello world</h1>
+
+    <script>
+      const options = { method: "GET", credential: true };
+
+      fetch("http://localhost:3000/set-cookie", options)
+        .then((response) => response.text())
+        .then((response) => console.log(response))
+        .catch((err) => console.error(err));
+    </script>
+  </body>
+</html>
